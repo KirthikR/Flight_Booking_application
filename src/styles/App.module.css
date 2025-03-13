@@ -1,0 +1,89 @@
+/* Background Container */
+.container {
+    background-image: url(''); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 150vh; /* Fullscreen */
+    width: 200vw; /* Fullscreen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    background: hsl(211, 100%, 50%);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Align left and right */
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Logo (Left Side) */
+  .logo {
+    font-size: 55px;
+    font-weight: bold;
+  }
+  
+  /* Nav Links (Right Side) */
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li {
+    display: inline;
+  }
+  
+  .navLinks a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks a:hover {
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  /* Main Content */
+  .content {
+    text-align: center;
+    margin-top: 90px; /* Ensure spacing from navbar */
+    padding: 2rem 4rem;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }

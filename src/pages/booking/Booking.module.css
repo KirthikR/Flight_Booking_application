@@ -1,0 +1,248 @@
+.bookingContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: rgb(81, 120, 219);
+  border-radius: 25px;
+  box-shadow: 0 36px 36px rgba(1, 1, 1, 0.08);
+  overflow: hidden;
+}
+
+.tripTypeSelector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto 2.5rem;
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: fit-content;
+}
+
+.tripTypeBtn {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  width: 100px;
+}
+
+.tripTypeBtn.active {
+  background: #007bff;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mainFlightDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin: 0 1rem;
+  width: calc(90% - 2rem);
+}
+
+.locationGroup {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 40px minmax(200px, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  padding: 0 1rem;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: #070707;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.inputWithIcon {
+  position: relative;
+  width: 100%;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.inputGroup input {
+  width: 100%;
+  height: 48px;
+  padding: 0 1rem 0 2.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.inputGroup input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+.exchangeBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  background: white;
+  color: #007bff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 2rem auto 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.exchangeBtn:hover {
+  background: #007bff;
+  color: white;
+  transform: rotate(180deg);
+}
+
+.dateGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.passengerSelector {
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  height: 48px;
+  padding: 0 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.passengerSelector:hover {
+  border-color: #007bff;
+}
+
+.additionalOptions {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  width: calc(100% - 2rem);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #191818;
+  user-select: none;
+}
+
+.searchButton {
+  align-self: center;
+  height: 48px;
+  padding: 0 2.5rem;
+  background: #0e0e0e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 1.5rem auto;
+  min-width: 200px;
+  max-width: 300px;
+  width: calc(100% - 4rem);
+  box-shadow: 0 4px 12px rgba(10, 10, 10, 0.2);
+}
+
+.searchButton:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgb(248, 249, 249);
+}
+
+.passengerModal {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 1rem;
+  left: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  z-index: 1000;
+  width: 280px;
+  border: 1px solid #e0e0e0;
+  transform-origin: top right;
+}
+
+@media (max-width: 768px) {
+  .bookingContainer {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .locationGroup {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .exchangeBtn {
+    margin: 0.5rem auto;
+  }
+
+  .dateGroup {
+    grid-template-columns: 1fr;
+  }
+
+  .passengerModal {
+    right: 0;
+    width: calc(100% - 2rem);
+  }
+}
